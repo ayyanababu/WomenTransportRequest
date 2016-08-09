@@ -85,7 +85,7 @@ define(function (require) {
         React.createElement("div", {className: "loginicon"}), 
         React.createElement("div", {className: "loginscreen"}, 
           React.createElement("div", {className: "userdetails"}, 
-            React.createElement("label", {className: "loginlabel"}, getString("dnata_id")), 
+            React.createElement("label", {className: "loginlabel"}, getString("user_id")), 
             React.createElement("input", {id: "userinfo", className: "loginFields", type: "text", name: "username"})
           ), 
           React.createElement("div", {className: "pwdetails"}, 

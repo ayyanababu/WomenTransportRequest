@@ -12,7 +12,7 @@ define(function (require) {
       return {msg:"",login:true}
     },
     componentDidMount: function () {
-        Store.addChangeListener (constants.Login_Issued_Event,this._onChange);
+        //Store.addChangeListener (constants.Login_Issued_Event,this._onChange);
         //this is for input navigations in form
         $('input').keydown( function(e) {
           var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
@@ -32,7 +32,7 @@ define(function (require) {
 
     },
     componentWillUnmount: function () {
-        Store.removeChangeListener (constants.Login_Issued_Event,this._onChange);
+        //Store.removeChangeListener (constants.Login_Issued_Event,this._onChange);
         var node = this.getDOMNode();
         $(node).find('input').unbind('keydown');
     },
@@ -81,16 +81,13 @@ define(function (require) {
     }
 
     return(
-      React.createElement("div", {className: "gclass"}, 
-        React.createElement("div", {className: "loginicon"}), 
-        React.createElement("div", {className: "loginscreen"}, 
-          React.createElement("div", {className: "userdetails"}, 
-            React.createElement("label", {className: "loginlabel"}, getString("user_id")), 
-            React.createElement("input", {id: "userinfo", className: "loginFields", type: "text", name: "username"})
+      React.createElement("div", {className: "gclass", id: "loginscreen"}, 
+        React.createElement("div", {className: "loginContainer"}, 
+          React.createElement("div", {className: "loginField"}, 
+            React.createElement("input", {id: "userinfo", className: "loginInput", type: "text", name: "username", placeholder: getString("user_id")})
           ), 
-          React.createElement("div", {className: "pwdetails"}, 
-            React.createElement("label", {className: "loginlabel"}, getString("password")), 
-            React.createElement("input", {id: "pwdinfo", className: "loginFields", type: "password", name: "pwd"})
+          React.createElement("div", {className: "loginField"}, 
+            React.createElement("input", {id: "pwdinfo", className: "loginInput", type: "password", name: "pwd", placeholder: getString("password")})
           ), 
           React.createElement("div", {className: "errorMsg"}, this.state.msg), 
           loginButton

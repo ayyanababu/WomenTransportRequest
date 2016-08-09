@@ -66,11 +66,6 @@ body {
   overflow-y: scroll;
 }
 
-#MS_INC_ACTUAL_INJURY
-{
-    height: 93%;
-}
-
 
 .navigationBar {
     position: relative;
@@ -140,40 +135,6 @@ body {
   width: 100%;
   height: 94%;
 }
-
-
-.gridIcon{
-    width: 100%;
-    height: 70%;
-}
-
-.gridName {
-    width: 100%;
-    text-align: center;
-    font-size: 90%;
-}
-
-.gridContainer {
-    position: relative;
-    width: 97%;
-    height: 97%;
-    padding-left: 3%;
-    padding-top: 3%;
-    cursor: pointer;
-}
-
-.gridItem {
-    position: relative;
-    width: 47%;
-    height: 23.8%;
-    float: left;
-    margin-right: 3%;
-    margin-bottom: 2%;
-    background-color: #0f88ca;
-    border-radius: 0.4em;
-    cursor: pointer;
-}
-
 
 .buttonContainer {
     position: relative;
@@ -353,85 +314,6 @@ body {
   margin-top: 2%;
 }
 
-.homecontroller {
-    position: relative;
-    width: 100%;
-    height: 94%;
-}
-
- .sectionEvenItem{
-   position:relative;
-   background-color: #0f88ca;
-   height: 33.3%;
-   width: 100%;
-   cursor: pointer;
- }
-
-.sectionOddItem{
-  position:relative;
-  background-color: #1c75bc;
-  height: 33.3%;
-  width: 100%;
-  cursor: pointer;
-}
-
-.sectionIcon{
-  position: relative;
-  width: 100%;
-  height: 60%;
-  font-size: 4.2em;
-  text-align: center;
-  top: 19%;
-  cursor: pointer;
-}
-
-.sectionName{
-  position: relative;
-  width: 100%;
-  height:40%;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 1.25em;
-  cursor: pointer;
- }
-
- .actualcontroller{
-   position: relative;
-   width: 100%;
-   height: 94%;
-   cursor: pointer;
- }
-
- .actualItem{
-   position:relative;
-   background-color: #0f88ca;
-   height: 25%;
-   width: 75%;
-   margin: 10% auto;
-   border-radius: 0.5em;
-   cursor: pointer;
- }
-
- .actualIcon{
-   position: relative;
-   width: 100%;
-   height: 60%;
-   font-size: 3.9em;
-   text-align: center;
-   top: 14%;
-   cursor: pointer;
- }
-
- .actualName{
-   position: relative;
-   width: 100%;
-   height:40%;
-   text-align: center;
-   font-family: Roboto;
-   font-size: 1.25em;
-   top: 8%;
-   cursor: pointer;
- }
 
  textarea
  {

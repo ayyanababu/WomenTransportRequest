@@ -12,7 +12,7 @@ define(function (require) {
       return {msg:"",login:true}
     },
     componentDidMount: function () {
-        Store.addChangeListener (constants.Login_Issued_Event,this._onChange);
+        //Store.addChangeListener (constants.Login_Issued_Event,this._onChange);
         //this is for input navigations in form
         $('input').keydown( function(e) {
           var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
@@ -32,7 +32,7 @@ define(function (require) {
 
     },
     componentWillUnmount: function () {
-        Store.removeChangeListener (constants.Login_Issued_Event,this._onChange);
+        //Store.removeChangeListener (constants.Login_Issued_Event,this._onChange);
         var node = this.getDOMNode();
         $(node).find('input').unbind('keydown');
     },
@@ -81,16 +81,13 @@ define(function (require) {
     }
 
     return(
-      <div className= "gclass">
-        <div className="loginicon"></div>
-        <div className="loginscreen">
-          <div className="userdetails">
-            <label className="loginlabel">{getString("user_id")}</label>
-            <input id="userinfo" className="loginFields" type="text" name="username"></input>
+      <div className= "gclass" id="loginscreen">
+        <div className="loginContainer">
+          <div className="loginField">
+            <input id="userinfo" className="loginInput" type="text" name="username" placeholder={getString("user_id")}></input>
           </div>
-          <div className="pwdetails">
-            <label className="loginlabel">{getString("password")}</label>
-            <input id="pwdinfo" className="loginFields" type="password" name="pwd"></input>
+          <div className="loginField">
+            <input id="pwdinfo" className="loginInput" type="password" name="pwd" placeholder={getString("password")}></input>
           </div>
           <div className="errorMsg">{this.state.msg}</div>
           {loginButton}

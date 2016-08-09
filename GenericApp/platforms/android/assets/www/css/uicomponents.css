@@ -59,62 +59,6 @@
 }
 
 
-.gridIcon:before{
-  font-size: 3em;
-  position: absolute;
-  top: 40%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  left: 50%;
-}
-
-.icon-PSD:before{
-  content: "\e700";
-}
-
-.icon-FLY:before{
-  content: "\e701";
-}
-
-.icon-WAB:before{
-  content: "\e702";
-}
-
-.icon-SBR:before{
-  content: "\e703";
-}
-
-.icon-DGR:before{
-  content: "\e704";
-}
-
-.icon-EQD:before{
-  content: "\e705";
-}
-
-.icon-PRD:before{
-  content: "\e706";
-}
-
-.icon-PAE:before{
-  content: "\e707";
-}
-
-
-.icon-MS_INC_ACTUAL_INJURY:before{
-  content: "\e708";
-}
-
-.icon-MS_INC_POTENTIAL_INJ_FORM:before{
-  content: "\e709";
-}
-
-.icon-MS_INC_FEEDBACK:before{
-  content: "\e70a";
-}
-
 .inputBox{
   appearance: none;
   -webkit-appearance: none;
@@ -459,62 +403,6 @@
   color: white;
 }
 
-.attachment{
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  height: 15%;
-  /*margin-top: 3%;*/
-  position: relative;
-  cursor: pointer;
-  width: 100%;
-}
-
-.attachmentholder{
-  width: 97%;
-  height: 100%;
-  position: relative;
-  cursor: pointer;
-}
-
-.attach:before{
-  background-color: #e6e7e8;
-  color: #7e7e7e;
-  font-size: 2.5em;
-  margin-left: 3%;
-  margin-bottom: 3%;
-  position: relative;
-  border-radius: 0.15em;
-  padding: 5%;
-  float: left;
-  height: 80%;
-  cursor: pointer;
-}
-
-.attachimg{
-  height: 83%;
-  margin-top: 0.2%;
-  width: 21.5%;
-  float: left;
-  margin-left: 3%;
-  margin-bottom: 3%;
-  border-radius: 0.25em;
-  cursor: pointer;
-}
-
-.attachbox{
-  position: absolute;
-  top: 35%;
-  display: inline-block;
-  width: 94%;
-  height: 28%;
-  left:3%;
-  background-color: white;
-  border-radius: 2em;
-  z-index: 91;
-  cursor: pointer;
-}
-
 .cancel{
   position: absolute;
   height: 30%;
@@ -534,51 +422,6 @@
   margin-right: 30%;
   cursor:pointer;
 }
-
-.capture{
-  position: relative;
-  display: inline-block;
-  height: 60%;
-  width: 50%;
-  margin-top: 14%;
-  cursor:pointer;
-}
-
-.attachicon:before{
-  height: 60%;
-  color: #0f88ca;
-  font-size: 3.5em;
-  position: absolute;
-  top: 30%;
-  cursor:pointer;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  left: 50%;
-}
-
-.attachtext{
-  height: 40%;
-  width: 100%;
-  color: #6abd45;
-  text-align: center;
-  font-family: Roboto;
-  font-weight: 400;
-  position: absolute;
-  top:60%;
-  cursor:pointer;
-}
-
-.divider{
-  position: absolute;
-  display: inline-block;
-  left: 50%;
-  width: 0.5%;
-  height: 80%;
-  top: 10%;
-  background-color: #0f88ca;
-  }
 
 .green_background{
   background-color: #6abd45;
@@ -732,25 +575,6 @@
   /*margin-left: 2%;*/
 }
 
-.promptField{
-  color: black;
-  padding: 2%;
-}
-#sessionkey{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border: none;
-  background: transparent;
-  border-bottom: 0.1em solid #0088ce;
-  outline: none;
-  padding-top: 5%;
-  padding-bottom: 3%;
-  width: 91%;
-  position: relative;
-  font-size: medium;
-  text-align: center;
-}
-
 .msgBtnClass{
   position:relative;
   height: 100%;
@@ -781,11 +605,6 @@
   display: inline-block;
 }
 
-.feedbackUserDetails{
-  width:auto;
-  height:auto;
-  position: relative;
-}
 
 .highlight
 {

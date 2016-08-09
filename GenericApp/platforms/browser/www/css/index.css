@@ -151,37 +151,20 @@ body {
     cursor: pointer;
 }
 
-.loginicon{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: #0088ce;
-  position: relative;
-  color: black;
-  height: 30%;
-  width: 100%;
-  background-image: url('../img/dnatalogo.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+#loginscreen{
+  background-color: #993998;
+  background: -webkit-linear-gradient(#f896c8, #993998);
 }
 
-.loginscreen{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  color: #0088ce;
-  height: 55%;
+.loginContainer{
+  top: 22%;
+  height: 50%;
   width: 100%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  position: relative;
+  position: fixed;
   min-height: 15em;
 }
 
-.userdetails {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+.loginField{
   margin-left: 10%;
   margin-top: 10%;
   position: relative;
@@ -189,12 +172,12 @@ body {
   height: 20%;
 }
 
-.loginFields{
+.loginInput{
   -webkit-appearance: none;
   -moz-appearance: none;
   border:none;
   background:transparent;
-  border-bottom: 0.1em solid #0088ce;
+  border-bottom: 0.1em solid white;
   outline: none;
   padding-top: 5%;
   padding-bottom: 3%;
@@ -205,22 +188,9 @@ body {
   font-weight: 300;
 }
 
-.pwdetails{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  margin-left: 10%;
-  margin-top: 10%;
-  position: relative;
-  font-family: Roboto;
-  height: 20%;
-}
-
 /*for the dnataid and password labels*/
 
 .loginlabel{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   position:relative;
   font-family: Roboto;
   font-weight: 300;
@@ -230,16 +200,14 @@ body {
 
 
 .loginbtn{
-  -webkit-appearance: none;
-  -moz-appearance: none;
   display: table;
   margin: 0 auto;
   margin-top: 10%;
   border-radius: 50px;
-  border: 1px solid #0088ce;
-  background-color: #0088ce;
+  border: 1px solid white;
+  background-color: rgba(213,115,183,0.7);
   font-family: Roboto;
-  font-weight: 500;
+  font-weight: 200;
   font-size: 120%;
   outline:none;
   width: 50%;
@@ -279,14 +247,11 @@ body {
 }
 
 .footer{
-  position:relative;
-  height:13%;
+  position:fixed;
+  height:12%;
   width:100%;
-  color: #0088ce;
   bottom:0;
   text-align: center;
-  margin-top: 2.5%;
-  z-index: -1;
 }
 
 .metricLogo{
@@ -295,19 +260,19 @@ body {
 }
 .msfooter {
   font-family: Roboto;
-  font-weight: 300;
+  font-weight: 100;
   display: inline-block;
 }
 
 .msLogo{
-  width: 50%;
+  width: 45%;
   margin-bottom: -3%;
   display: inline;
 }
 
 .vfooter {
   font-family: Roboto;
-  font-weight: 300;
+  font-weight: 100;
   position: relative;
   height: 38%;
   width: 100%;

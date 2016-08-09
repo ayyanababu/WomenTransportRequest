@@ -3,11 +3,11 @@ define (function (require) {
 	var server={requestURL:"", reqType:"",reqdata:"",callBackSuccess:""};
 	//var URL= "http://msi-l1905/metricstream";
 	//UAT
-	var URL= "https://dnatasafetyhub-uat.ek.aero/metricstream";
+	//var URL= "https://dnatasafetyhub-uat.ek.aero/metricstream";
 	//Performance system: 172.27.132.219
 	//var URL= "https://172.27.132.219/metricstream";
 	//dev
-  //var URL = "http://172.27.138.47/metricstream";
+  var URL = "http://172.27.138.47/metricstream";
 	//production
 	//var URL = "https://safetyhub.dnata.com/metricstream";
 	var isSSO = true;
