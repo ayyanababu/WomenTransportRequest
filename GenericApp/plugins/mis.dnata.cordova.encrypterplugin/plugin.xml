@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="mis.dnata.cordova.encrypterplugin"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        version="0.1.0">
+    <engines>
+        <engine name="cordova" version=">=3.6.0"/>
+    </engines>
+    <name>EncrypterPlugin</name>
+    <author>Phani Sunkara</author>
+    <email>phani.sunkara@metricstream.com</email>
+
+    <js-module src="www/encrypter.js"
+               name="Encrypter">
+        <clobbers target="Encrypter"/>
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Encrypter">
+                <param name="android-package"
+                       value="com.mis.cordova.Encrypter"/>
+            </feature>
+        </config-file>
+
+        <source-file
+                src="src/android/com/mis/cordova/Encrypter.java"
+                target-dir="src/com/mis/cordova"/>
+     </platform>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Encrypter">
+                <param name="ios-package" value="Encrypter"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/encrypterPlugin/Encrypter.h"/>
+        <source-file src="src/ios/encrypterPlugin/Encrypter.m"/>
+
+        <framework src="Security.framework"/>
+
+
+    </platform>
+
+</plugin>

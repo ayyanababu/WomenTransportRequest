@@ -1,0 +1,45 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.metricstream.dnata"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.metricstream.dnata"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.metricstream.dnata"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.metricstream.dnata"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.metricstream.dnata"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.metricstream.dnata"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.metricstream.dnata"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.metricstream.dnata"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.metricstream.dnata"
+        },
+        "mis.dnata.cordova.encrypterplugin": {
+            "PACKAGE_NAME": "com.metricstream.dnata"
+        },
+        "mis.dnata.cordova.urlredirecter": {
+            "PACKAGE_NAME": "com.metricstream.dnata"
+        }
+    },
+    "dependent_plugins": {}
+}

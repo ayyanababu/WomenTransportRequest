@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="mis.dnata.cordova.urlredirecter"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        version="0.1.0">
+    <engines>
+        <engine name="cordova" version=">=3.6.0"/>
+    </engines>
+    <name>URLRedirecter</name>
+    <author>Phani Sunkara</author>
+    <email>phani.sunkara@metricstream.com</email>
+
+    <js-module src="www/urlredirecter.js"
+               name="URLRedirecter">
+        <clobbers target="URLRedirecter"/>
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="URLRedirecter">
+                <param name="android-package"
+                       value="com.mis.cordova.URLRedirecter"/>
+            </feature>
+        </config-file>
+
+        <source-file
+                src="src/android/com/mis/cordova/URLRedirecter.java"
+                target-dir="src/com/mis/cordova"/>
+     </platform>
+
+</plugin>
