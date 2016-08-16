@@ -12,7 +12,7 @@ define(function (require) {
       return {msg:"",login:true}
     },
     componentDidMount: function () {
-        //Store.addChangeListener (constants.Login_Issued_Event,this._onChange);
+        Store.addChangeListener (constants.Login_Issued_Event,this._onChange);
         //this is for input navigations in form
         $('input').keydown( function(e) {
           var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
@@ -32,7 +32,7 @@ define(function (require) {
 
     },
     componentWillUnmount: function () {
-        //Store.removeChangeListener (constants.Login_Issued_Event,this._onChange);
+        Store.removeChangeListener (constants.Login_Issued_Event,this._onChange);
         var node = this.getDOMNode();
         $(node).find('input').unbind('keydown');
     },
@@ -64,7 +64,7 @@ define(function (require) {
       this.setState({msg:"",login:false});
       var Obj = {
          username: username,
-         pwd: pwd,
+         password: pwd,
       }
       actions.doLogin(Obj);
   },

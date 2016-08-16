@@ -64,7 +64,7 @@ define(function (require) {
       this.setState({msg:"",login:false});
       var Obj = {
          username: username,
-         pwd: pwd,
+         password: pwd,
       }
       actions.doLogin(Obj);
   },
@@ -81,16 +81,13 @@ define(function (require) {
     }
 
     return(
-      <div className= "gclass">
-        <div className="loginicon"></div>
-        <div className="loginscreen">
-          <div className="userdetails">
-            <label className="loginlabel">{getString("user_id")}</label>
-            <input id="userinfo" className="loginFields" type="text" name="username"></input>
+      <div className= "gclass" id="loginscreen">
+        <div className="loginContainer">
+          <div className="loginField">
+            <input id="userinfo" className="loginInput" type="text" name="username" placeholder={getString("user_id")}></input>
           </div>
-          <div className="pwdetails">
-            <label className="loginlabel">{getString("password")}</label>
-            <input id="pwdinfo" className="loginFields" type="password" name="pwd"></input>
+          <div className="loginField">
+            <input id="pwdinfo" className="loginInput" type="password" name="pwd" placeholder={getString("password")}></input>
           </div>
           <div className="errorMsg">{this.state.msg}</div>
           {loginButton}

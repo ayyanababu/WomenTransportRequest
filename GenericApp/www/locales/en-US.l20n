@@ -5,3 +5,20 @@
 <version "Version 1.0.0">
 <user_id "Login ID">
 <password "Password">
+<all "All">
+<employeeName "Employee Name">
+<managerName "Manager Name">
+<department "Department">
+<date "Date">
+<requestTime "Request Time">
+<transportType "Transport Type">
+<businessJustification "Business Justification">
+<toAddress "To Address">
+<internal_error "Internal Error occurred. Try restarting the application. If problem persists contact administrator.">
+<login_failed "Authentication failed. Please check your credentials.">
+<confirm_logout "Are you sure you want to Logout?">
+<yes "YES">
+<no "NO">
+<ok "OK">
+<session_expiry_prompt_msg "Session is going to expire in {0} seconds. To continue, please enter password.">
+<login_validation_field "Employee ID and Password fields cannot be empty.">

@@ -7,40 +7,18 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.metricstream.dnata"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.metricstream.dnata"
-        },
-        "cordova-plugin-camera": {
-            "PACKAGE_NAME": "com.metricstream.dnata"
-        },
-        "cordova-plugin-file": {
-            "PACKAGE_NAME": "com.metricstream.dnata"
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.msi.sample"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.metricstream.dnata"
+            "PACKAGE_NAME": "com.msi.sample"
         },
-        "cordova-plugin-file-transfer": {
-            "PACKAGE_NAME": "com.metricstream.dnata"
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.msi.sample"
         },
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.metricstream.dnata"
-        },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.metricstream.dnata"
-        },
-        "mis.dnata.cordova.encrypterplugin": {
-            "PACKAGE_NAME": "com.metricstream.dnata"
-        },
-        "mis.dnata.cordova.urlredirecter": {
-            "PACKAGE_NAME": "com.metricstream.dnata"
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.msi.sample"
         }
     },
-    "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.metricstream.dnata"
-        }
-    }
+    "dependent_plugins": {}
 }

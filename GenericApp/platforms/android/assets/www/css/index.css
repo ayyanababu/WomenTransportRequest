@@ -9,6 +9,7 @@ body {
     background-color:white;
     font-family: 'Roboto';
     font-size: 100%;
+    font-weight: lighter;
     width: 100%;
     height: 100%;
     padding:0px;
@@ -70,28 +71,28 @@ body {
 .navigationBar {
     position: relative;
     width: 100%;
-    color: black;
+    color: white;
     font-size: 125%;
     height: 6%;
     border-style: groove;
     border-width: 1px 0px;
     border-color: #fff;
-    min-height: 1.82em;
+    background: #983897;
+    min-height: 3em;
 }
 
 .headerContainer {
   position: absolute;
   height: 100%;
-  color: #0f88ca;
   text-align: center;
   width: 100%;
 }
 
 .headerContainer > div.title {
   text-align: center;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 96%;
-  margin: 0.5em 0 0.5em 0;
+  margin: 5% 0 1% 0;
 }
 
 .menuBtContainer {
@@ -112,13 +113,12 @@ body {
 }
 .menuBtTitle {
   float: left;
-  background-color: #0f88ca;
   text-align: center;
   width: 50%;
   position: relative;
   color: white;
-  height: 80%;
-  padding-top: 8%;
+  height: 68%;
+  padding-top: 20%;
 }
 .menuBtTitle.titleRight {
   float: right;
@@ -126,14 +126,15 @@ body {
 
 #logout
 {
-    background-color: white;
-    color: #0f88ca;
+  background-color: inherit;
+  color: white;
 }
 .controller
 {
   position: relative;
   width: 100%;
   height: 94%;
+  color:black;
 }
 
 .buttonContainer {
@@ -151,37 +152,20 @@ body {
     cursor: pointer;
 }
 
-.loginicon{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: #0088ce;
-  position: relative;
-  color: black;
-  height: 30%;
-  width: 100%;
-  background-image: url('../img/dnatalogo.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+#loginscreen{
+  background-color: #993998;
+  background: -webkit-linear-gradient(#f896c8, #993998);
 }
 
-.loginscreen{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  color: #0088ce;
-  height: 55%;
+.loginContainer{
+  top: 27%;
+  height: 50%;
   width: 100%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  position: relative;
+  position: fixed;
   min-height: 15em;
 }
 
-.userdetails {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+.loginField{
   margin-left: 10%;
   margin-top: 10%;
   position: relative;
@@ -189,12 +173,12 @@ body {
   height: 20%;
 }
 
-.loginFields{
+.loginInput{
   -webkit-appearance: none;
   -moz-appearance: none;
   border:none;
   background:transparent;
-  border-bottom: 0.1em solid #0088ce;
+  border-bottom: 0.1em solid rgba(250,250,250,0.7);
   outline: none;
   padding-top: 5%;
   padding-bottom: 3%;
@@ -203,24 +187,12 @@ body {
   font-family: Roboto;
   font-size: medium;
   font-weight: 300;
-}
-
-.pwdetails{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  margin-left: 10%;
-  margin-top: 10%;
-  position: relative;
-  font-family: Roboto;
-  height: 20%;
+  color: white;
 }
 
 /*for the dnataid and password labels*/
 
 .loginlabel{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   position:relative;
   font-family: Roboto;
   font-weight: 300;
@@ -230,16 +202,14 @@ body {
 
 
 .loginbtn{
-  -webkit-appearance: none;
-  -moz-appearance: none;
   display: table;
   margin: 0 auto;
   margin-top: 10%;
   border-radius: 50px;
-  border: 1px solid #0088ce;
-  background-color: #0088ce;
+  border: 1px solid rgba(245,245,245,0.7);
+  background-color: rgba(213,115,183,0.7);
   font-family: Roboto;
-  font-weight: 500;
+  font-weight: 200;
   font-size: 120%;
   outline:none;
   width: 50%;
@@ -279,14 +249,11 @@ body {
 }
 
 .footer{
-  position:relative;
-  height:13%;
+  position:fixed;
+  height:12%;
   width:100%;
-  color: #0088ce;
   bottom:0;
   text-align: center;
-  margin-top: 2.5%;
-  z-index: -1;
 }
 
 .metricLogo{
@@ -295,19 +262,19 @@ body {
 }
 .msfooter {
   font-family: Roboto;
-  font-weight: 300;
+  font-weight: 100;
   display: inline-block;
 }
 
 .msLogo{
-  width: 50%;
+  width: 45%;
   margin-bottom: -3%;
   display: inline;
 }
 
 .vfooter {
   font-family: Roboto;
-  font-weight: 300;
+  font-weight: 100;
   position: relative;
   height: 38%;
   width: 100%;
@@ -341,4 +308,114 @@ body {
 .controller-leave.controller-leave-active {
   opacity: 0.01;
   transition: opacity 300ms ease-in;
+}
+
+/*specfic to women transport request*/
+
+.requestItem
+{
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  height: 9%;
+  padding: 5% 5% 2% 5%;
+}
+.requestItemDiv
+{
+  position: relative;
+  height: 50%;
+  width: 50%;
+  float: left;
+}
+
+.requesterName
+{
+  color: #9E6E9D;
+  font-weight: normal;
+}
+
+.requestDate
+{
+  text-align: right;
+  font-size: 65%;
+  font-weight: 500;
+  margin-top: 2%;
+  height: 40%;
+}
+
+.requesterManager
+{
+  font-size: 70%;
+  font-weight: 500;
+}
+
+.requesterGroup
+{
+  text-align: right;
+  font-size: 70%;
+  font-weight: 300;
+}
+
+.requestDetailView {
+    position: relative;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+}
+
+.requestDetailViewRow {
+  position: relative;
+  height: 8%;
+  width: 86%;
+  margin: 5% 7% 0% 7%;
+  margin-left: 7%;
+}
+
+.reqLabel {
+    position: relative;
+    color: #983897;
+    font-weight: normal;
+    font-size: 80%;
+}
+
+.reqValue {
+    position: relative;
+    font-weight: 400;
+    font-size: 80%;
+    margin-top: 2%;
+}
+
+.requestDetailViewCol {
+    position: relative;
+    width: 50%;
+    float: left;
+    height:100%;
+}
+
+.expandRow
+{
+  height: auto;
+  display: table;
+}
+
+#acceptBtn
+{
+    background-image: url('./img/acceptbutton.svg');
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    position: relative;
+    padding:1%;
+}
+
+#rejectBtn
+{
+  background-image: url('./img/rejectbutton.svg');
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  position: relative;
+  padding:1%;
 }

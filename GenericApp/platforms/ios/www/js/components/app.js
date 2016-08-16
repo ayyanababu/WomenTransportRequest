@@ -6,24 +6,35 @@ define(function (require) {
     var LoginConstants = require ("constants/loginConstants");
     var LoginStore = require("stores/loginStore");
     var LoginActions= require("actions/loginActions");
+    var RequestController= require("controllers/requestController");
 
     var app = React.createClass({
         displayName: 'dnata',
 
     componentDidMount: function () {
         LoginStore.addChangeListener (LoginConstants.Login_Issued_Event,this.onChange);
-        LoginStore.addChangeListener (LoginConstants.Pre_Session_Expiry_Event,this.showExpiryPrompt);
     },
     componentWillUnmount: function () {
         LoginStore.removeChangeListener (LoginConstants.Login_Issued_Event,this.onChange);
-        LoginStore.removeChangeListener (LoginConstants.Pre_Session_Expiry_Event,this.showExpiryPrompt);
     },
     onChange:function()
     {
       this.setState(this.getContents());
     },
     getContents:function () {
-        var content =  React.createElement(Login, null);
+        var content;
+
+        if(LoginStore.isUserLoggedIn()){
+          var controllerData = {
+            title:"all",
+            content: React.createElement(RequestController, null),
+            rightButtonName:"Logout"
+          };
+          content = React.createElement(NavigationController, {controller: controllerData})
+        }
+        else {
+          content = React.createElement(Login, null);
+        }
         return {content:content};
     },
     getInitialState:function()

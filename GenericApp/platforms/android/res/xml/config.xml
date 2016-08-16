@@ -1,5 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="1" id="com.msi.sample" ios-CFBundleVersion="1.0.0" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="1" id="com.metricstream.wtr" ios-CFBundleVersion="1.0.0" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
     <feature name="StatusBar">
         <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
         <param name="onload" value="true" />
@@ -8,35 +15,9 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="Camera">
-        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
-    </feature>
-    <feature name="File">
-        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="SplashScreen">
-        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
-        <param name="onload" value="true" />
-    </feature>
-    <feature name="FileTransfer">
-        <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
-    </feature>
-    <feature name="Device">
-        <param name="android-package" value="org.apache.cordova.device.Device" />
-    </feature>
-    <feature name="InAppBrowser">
-        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-    </feature>
-    <feature name="Encrypter">
-        <param name="android-package" value="com.mis.cordova.Encrypter" />
-    </feature>
-    <feature name="URLRedirecter">
-        <param name="android-package" value="com.mis.cordova.URLRedirecter" />
-    </feature>
-    <name>Sample App</name>
+    <name>WTR</name>
     <description>
-        Mobile solution for GRC
+        Women Transport Request
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         PE Mobile MetricStream Team

@@ -12,13 +12,6 @@ define (function (require) {
           appDispatcher.dispatch ({
               actionType: constants.Logout
           });
-        },
-        reLogin:function(token)
-        {
-          appDispatcher.dispatch ({
-            actionType: constants.Login_Reissue,
-            token:token
-          });
         }
     };
     return loginActions;
