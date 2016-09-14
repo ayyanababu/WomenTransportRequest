@@ -30,6 +30,14 @@ define(function (require) {
           }
         });
 
+        $( "input" ).focus(function(e){
+           $(".footer").hide();
+        });
+
+        $( "input" ).blur(function(e){
+            $(".footer").show();
+        });
+      
     },
     componentWillUnmount: function () {
         Store.removeChangeListener (constants.Login_Issued_Event,this._onChange);

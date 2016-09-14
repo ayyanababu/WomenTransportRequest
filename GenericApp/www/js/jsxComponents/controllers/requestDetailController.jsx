@@ -2,6 +2,7 @@ define(function(require){
   var NavigationActions = require ("actions/navigationActions");
   var NavigationStore = require ("stores/navigationStore");
   var NavigationConstants = require ("constants/navigationConstants");
+  var Msg = require("views/msgBox");
 
   var requestDetailController = React.createClass ({
     componentDidMount: function () {
@@ -16,11 +17,29 @@ define(function(require){
       NavigationActions.popController();
     },
     onDisapprove:function(){
+        this.props.data.buheadComments = $("#comments").val();
+
+        if(!this.props.data.buheadComments)
+        {
+           this._showError("provide_comments");
+           return;
+        }
         this.props.disApprove(this.props.data);
         NavigationActions.popController();
     },
+    _onCancel:function()
+    {
+        NavigationActions.removePopup();
+    },
+    _showError:function(message)
+    {
+        NavigationActions.removePopup();
+        var msgButtonsArray = [{"title":"ok"}];
+        NavigationActions.presentPopup(<Msg msgLabel={message} buttons={msgButtonsArray} onMsgClick={this._onCancel}/>);
+    },
     onApprove:function()
     {
+        this.props.data.buheadComments = $("#comments").val();
         this.props.approve(this.props.data);
         NavigationActions.popController();
     },
@@ -58,6 +77,9 @@ define(function(require){
             <div className="requestDetailViewRow expandRow">
               <div className = "reqLabel">{getString("businessJustification")}</div>
               <div className = "reqValue">{this.props.data.businessJustification}</div>
+            </div>
+            <div className="requestDetailViewRow expandRow">
+              <textarea name="description" className="comments" maxLength="300" id="comments" placeholder={getString("comments")} value={this.props.data.buheadComments}/>
             </div>
             <div className="requestDetailViewRow expandRow">
               <div className="requestDetailViewCol">

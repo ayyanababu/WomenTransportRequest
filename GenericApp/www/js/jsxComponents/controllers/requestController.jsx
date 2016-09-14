@@ -16,7 +16,7 @@ define(function(require) {
   var RequestItem = require("views/requestItem");
   var RequestDetailController = require("controllers/requestDetailController");
    var Msg = require("views/msgBox");
-   
+
   var requestController = React.createClass ({
 
     // propTypes:{
@@ -30,7 +30,6 @@ define(function(require) {
       Store.addChangeListener(Constants.Request_Actions_Event,this._onRequestsChange);
       NavigationStore.addChangeListener (NavigationConstants.Right_Click_Event,this._onRightButtonClick);
       LoginStore.addChangeListener(LoginConstants.Logout_Error_Event,this._showError);
-      Actions.getRequests();
     },
 
     componentWillUnmount: function () {

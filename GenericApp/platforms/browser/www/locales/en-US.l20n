@@ -22,3 +22,5 @@
 <ok "OK">
 <session_expiry_prompt_msg "Session is going to expire in {0} seconds. To continue, please enter password.">
 <login_validation_field "Employee ID and Password fields cannot be empty.">
+<provide_comments "Please provide comments before disApproving request.">
+<comments "comments">

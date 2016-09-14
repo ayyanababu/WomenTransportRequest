@@ -9,6 +9,11 @@ define (function (require) {
 
     var requestStore = assign ({}, EventEmitter.prototype, {
       getRequests:function(){
+
+        if(!tasks)
+        {
+          getTasks();
+        }
         return tasks;
       },
       getError:function()
@@ -67,11 +72,11 @@ define (function (require) {
     {
         var successFunction = function(data,error)
         {
+            tasks = undefined;
             if(error) {
-                requestStore.emitChange(constants.Request_Actions_Event);
-            }else {
-              getTasks();
+                errorMsg = error;
             }
+            requestStore.emitChange(constants.Request_Actions_Event);
 
         }
         serverCall.takeAction(request,successFunction);
